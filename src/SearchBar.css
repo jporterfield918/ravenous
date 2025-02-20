@@ -1,0 +1,50 @@
+header {
+    background: goldenrod;
+  }
+  
+  header h1 {
+    color: white;
+  } 
+  
+  div.SearchBar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-image: url(https://img.freepik.com/premium-photo/black-background-with-various-food-items-including-burgers-fries-dips-left-right-sides-leaving-blank-space-center_1178440-79987.jpg);
+    background-size: cover;
+  }
+  
+  div.SearchBar-sort-options {
+    display: flex;
+    width: 100%;
+  }
+  
+  div.SearchBar-sort-options > ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  div.SearchBar-sort-options > ul > li {
+    margin-right: 20px;
+    font-weight: bold;
+  }
+  
+  div.SearchBar-fields {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  div.SearchBar input {
+    width: 50%;
+    padding: 10px;
+    font-size: 1.2em;
+  }
+  
+  div.SearchBar button {
+    width: 30%;
+    padding: 10px;
+    font-size: 1.2em;
+    background: goldenrod;
+    color: white;
+    border: none;
+  }
