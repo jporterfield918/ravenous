@@ -1,24 +1,35 @@
 import React from 'react';
-import './Business.css';
 
-function Business = (props) => {
+const business = {
+        imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
+        name: 'MarginOtto Pizzeria',
+        address: '1010 Paddington Way',
+        city: 'Flint',
+        state: 'MI',
+        zipCode: '48504',
+        category: 'Italian',
+        rating: '4.5 stars',
+        reviewCount: 90
+};
+
+function Business() {
   return (
     <div className='business'>
         <div className="image-container">
-            <img src={props.imageSrc} />
+            <img src={business.imageSrc} />
         </div>
-        <h2>{props.name}</h2>
+        <h2>{business.name}</h2>
         <div className="business-information">
             <div className='business-address'>
-                <p>{props.address}</p>
-                <p>{props.city}</p>
-                <p>{props.state}</p>
-                <p>{props.zipCode}</p>
+                <p>{business.address}</p>
+                <p>{business.city}</p>
+                <p>{business.state}</p>
+                <p>{business.zipCode}</p>
             </div>
             <div className='business-reviews'>
-                <h3>{props.category}</h3>
-                <h3>{props.rating}</h3>
-                <p>Based on {props.reviewCount} reviews</p>
+                <h3>{business.category}</h3>
+                <h3>{business.rating}</h3>
+                <p>Based on {business.reviewCount} reviews</p>
             </div>
         </div>
     </div>

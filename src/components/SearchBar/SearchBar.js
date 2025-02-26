@@ -1,7 +1,6 @@
 import React from 'react';
-import './SearchBar.css';
 
-const SearchBar = () => {
+function SearchBar() {
     return (
         <div className="SearchBar">
             <div className="SearchBar-sort-options">

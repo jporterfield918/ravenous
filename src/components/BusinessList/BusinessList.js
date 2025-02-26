@@ -1,49 +1,13 @@
 import React from 'react';
 import Business from '../Business/Business';
-import './BusinessList.css';
 
-const businesses = [
-    {
-        imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
-        name: 'MarginOtto Pizzeria',
-        address: '1010 Paddington Way',
-        city: 'Flint',
-        state: 'MI',
-        zipCode: '48504',
-        category: 'Italian',
-        rating: '4.5 stars',
-        reviewCount: 90
-    },{
-        imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
-        name: 'MarginOtto Pizzeria',
-        address: '1010 Paddington Way',
-        city: 'Flint',
-        state: 'MI',
-        zipCode: '48504',
-        category: 'Italian',
-        rating: '4.5 stars',
-        reviewCount: 90
-    },{
-        imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
-        name: 'MarginOtto Pizzeria',
-        address: '1010 Paddington Way',
-        city: 'Flint',
-        state: 'MI',
-        zipCode: '48504',
-        category: 'Italian',
-        rating: '4.5 stars',
-        reviewCount: 90
-    }
-];
-
-const BusinessList = () => {
+function BusinessList() {
     return (
         <div className="BusinessList">
-            {
-                businesses.map(business => {
-                    return <Business business={business} />;
-                })
-            }
+            <Business />
+            <Business />
+            <Business />
+            <Business />
         </div>
     );
 }
