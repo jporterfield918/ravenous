@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Ravenous
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This is my first React project and I'm using HTML, CSS, and React to build this. I am also using Git to publish to my Ravenous repo on GitHub.
 
 ## Available Scripts
 
