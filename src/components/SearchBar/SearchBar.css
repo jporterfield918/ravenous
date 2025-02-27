@@ -1,50 +1,75 @@
 header {
-    background: goldenrod;
-  }
-  
-  header h1 {
-    color: white;
-  } 
-  
-  div.SearchBar {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    background-image: url(https://img.freepik.com/premium-photo/black-background-with-various-food-items-including-burgers-fries-dips-left-right-sides-leaving-blank-space-center_1178440-79987.jpg);
-    background-size: cover;
-  }
-  
-  div.SearchBar-sort-options {
-    display: flex;
-    width: 100%;
-  }
-  
-  div.SearchBar-sort-options > ul {
-    display: flex;
-    list-style-type: none;
-  }
-  
-  div.SearchBar-sort-options > ul > li {
-    margin-right: 20px;
-    font-weight: bold;
-  }
-  
-  div.SearchBar-fields {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  div.SearchBar input {
-    width: 50%;
-    padding: 10px;
-    font-size: 1.2em;
-  }
-  
-  div.SearchBar button {
-    width: 30%;
-    padding: 10px;
-    font-size: 1.2em;
-    background: goldenrod;
-    color: white;
-    border: none;
-  }
+  background: goldenrod;
+}
+
+header h1 {
+  color: white;
+  font-family: sans-serif;
+  text-transform: lowercase;
+  margin: 0;
+  padding: 10px;
+  line-height: 1;
+  font-size: 48px;
+} 
+
+div.SearchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url(https://img.freepik.com/premium-photo/black-background-with-various-food-items-including-burgers-fries-dips-left-right-sides-leaving-blank-space-center_1178440-79987.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+div.SearchBar-sort-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+div.SearchBar-sort-options > ul {
+  display: flex;
+  padding: 1em 0 1em;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+div.SearchBar-sort-options > ul > li {
+  padding: 0 2em;
+  color: #ffffffcc;
+  text-decoration: underline;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+div.SearchBar-sort-options > ul > li:hover {
+  color: white;
+}
+
+div.SearchBar-fields {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 15vw 1em;
+}
+
+div.SearchBar input {
+  width: 50%;
+  padding: 10px;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+div.SearchBar button {
+  width: auto;
+  padding: 10px;
+  font-size: 22px;
+  background: goldenrod;
+  color: white;
+  border: none;
+  margin-bottom: 2em;
+}
