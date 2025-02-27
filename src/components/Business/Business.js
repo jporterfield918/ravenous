@@ -1,19 +1,7 @@
 import React from 'react';
 import styles from './Business.css';
 
-const business = {
-        imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
-        name: 'MarginOtto Pizzeria',
-        address: '1010 Paddington Way',
-        city: 'Flint',
-        state: 'MI',
-        zipCode: '48504',
-        category: 'Italian',
-        rating: '4.5 stars',
-        reviewCount: 90
-};
-
-function Business() {
+function Business({business}) {
   return (
     <div className='business'>
         <div className="image-container">
